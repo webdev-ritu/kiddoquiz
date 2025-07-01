@@ -56,7 +56,7 @@ VITE_FIREBASE_MESSAGING_SENDER_ID=your-msg-id
 VITE_FIREBASE_APP_ID=your-app-id
 VITE_FIREBASE_MEASUREMENT_ID=your-measure-id
 
-##📁 Project Structure
+## 📁 Project Structure
 pgsql
 Copy code
 kiddoquiz/
@@ -78,11 +78,14 @@ kiddoquiz/
 ├── package.json
 └── README.md
 
-##🚀 Firebase Deployment
+
+## 🚀 Firebase Deployment
+
 bash
 Copy code
 npm run build
 firebase deploy
 
-##❤️ Support
+## ❤️ Support
+
 If you enjoy this project, please ⭐ it on GitHub or share it with others!
