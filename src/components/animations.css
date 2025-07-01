@@ -1,0 +1,441 @@
+/* animations.css */
+
+/* Kid-friendly card styles */
+.category-card {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffefba, #ffffff);
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 183, 77, 0.3);
+  transition: box-shadow 0.3s ease;
+  min-width: 180px;
+  max-width: 220px;
+  margin: 1rem auto;
+}
+
+/* Color variants for categories - you can add specific background colors per category id */
+.category-card.math {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+}
+
+.category-card.science {
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.category-card.art {
+  background: linear-gradient(135deg, #fbc7a4 0%, #ffe4e1 100%);
+}
+
+/* Pulse animation - smooth glowing effect */
+.pulse {
+  display: inline-block;
+  animation: pulseGlow 2.5s infinite ease-in-out;
+  border-radius: 50%;
+  padding: 10px;
+  background: #fff3e0;
+  box-shadow: 0 0 8px 2px rgba(255, 183, 77, 0.7);
+  transition: transform 0.3s ease;
+}
+
+.pulse:hover {
+  animation-play-state: paused;
+  transform: scale(1.15);
+  box-shadow: 0 0 15px 5px rgba(255, 183, 77, 1);
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 8px 2px rgba(255, 183, 77, 0.7);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 18px 6px rgba(255, 183, 77, 1);
+    transform: scale(1.1);
+  }
+}
+
+/* Background for all pages: playful gradient + subtle shapes */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 183, 77, 0.15) 20%, transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(255, 153, 0, 0.15) 25%, transparent 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* animations.css */
+
+@keyframes floatBubbles {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-200px) translateX(40px) scale(1.4);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: fixed;
+  bottom: -100px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(255, 183, 77, 0.3);
+  animation: floatBubbles 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform, opacity;
+}
+.bubble-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* character*/
+/* animations.css */
+
+.character {
+  
+  border-radius: 15px;
+  filter: drop-shadow(0 4px 6px rgba(255, 183, 77, 0.4));
+  transition: box-shadow 0.3s ease;
+  touch-action: none;
+}
+
+/* Character borders for fun */
+.character.monkey {
+  border: 2px solid #ffb70033;
+}
+
+.character.robot {
+  border: 2px solid #70a1ff33;
+}
+
+.character.elephant {
+  border: 2px solid #a4de02cc;
+}
+
+/* Floating bubbles animation */
+@keyframes floatBubbles {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) translateX(20px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: fixed;
+  border-radius: 50%;
+  background: rgba(255, 183, 77, 0.2);
+  animation: floatBubbles 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform, opacity;
+}
+
+/* Body background for fun and kid-friendly feel */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(255, 183, 77, 0.15) 20%, transparent 70%),
+    radial-gradient(circle at 80% 70%, rgba(255, 153, 0, 0.15) 25%, transparent 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*footer*/
+
+/* animations.css */
+
+/* Footer background and text tweaks */
+.footer-section {
+  background: linear-gradient(135deg, #292929, #1c1c1c);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: inset 0 10px 20px rgba(255, 183, 77, 0.15);
+}
+
+.footer-section h5 {
+  color: #ffb300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Footer links */
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #ffb300;
+  transform: scale(1.1);
+  text-shadow: 0 0 6px #ffb300;
+  outline: none;
+}
+
+/* Social icon container */
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffb300;
+  color: #1c1c1c;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(255, 179, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background: #ffd54f;
+  transform: translateY(-5px) scale(1.2);
+  box-shadow: 0 8px 16px rgba(255, 179, 0, 0.9);
+  color: #000;
+  outline: none;
+  animation: bounce 0.6s ease;
+}
+
+/* Bounce animation for social icons on hover */
+@keyframes bounce {
+  0%, 100% { transform: translateY(-5px) scale(1.2); }
+  50% { transform: translateY(0) scale(1.1); }
+}
+
+/* Footer paragraph styling */
+.footer-section p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .footer-section {
+    border-radius: 0;
+    padding: 2rem 1rem;
+  }
+}
+/* animations.css */
+
+.custom-navbar {
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.nav-links .nav-link {
+  color: #ffffffcc;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-actions .btn {
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-btn:hover,
+.signup-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.signup-btn {
+  font-weight: 600;
+  color: #0d6efd;
+  background-color: #fff;
+  border: none;
+}
+
+/* animations.css */
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  gap: 1rem;
+  background: linear-gradient(135deg, #fff9e5, #ffe48b);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 179, 0, 0.4);
+  padding: 2rem 3rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.loading-spinner {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  filter: drop-shadow(0 0 8px #ffb300aa);
+}
+
+.loading-dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #ffb300;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #ffb300cc;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.dot-1 {
+  top: 10px;
+  left: 31px;
+  animation-delay: 0s;
+}
+
+.dot-2 {
+  top: 50px;
+  left: 10px;
+  animation-delay: 0.3s;
+}
+
+.dot-3 {
+  top: 50px;
+  left: 52px;
+  animation-delay: 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 0 10px #ffb300cc;
+  }
+  50% {
+    transform: translateY(-15px) scale(1.2);
+    box-shadow: 0 0 20px #ffd54f;
+  }
+}
+
+.loading-text {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 700;
+  color: #ff9800;
+  letter-spacing: 2px;
+  animation: waveText 1.5s ease-in-out infinite;
+}
+
+@keyframes waveText {
+  0%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: translateY(-5px);
+  }
+}
+.chart-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #fff9e5, #ffe48b);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 179, 0, 0.3);
+}
+.quiz-card {
+  background: #fff8e1;
+  border: none;
+}
+
+.option-button {
+  background-color: #fff3cd;
+  color: #795548;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 5px transparent;
+  font-size: 1.1rem;
+}
+
+.option-button:disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
+.score-card-container {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  color: #5d3a00;
+  font-family: 'Comic Sans MS', cursive;
+  
+}
+.dashboard-bg {
+  background: linear-gradient(to bottom right, #fffefc, #eaf6ff);
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.btn-outline-primary:hover {
+  background-color: #bde0ff;
+  color: #000;
+  transition: 0.3s;
+}
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+  transition: 0.3s;
+}
+.with-bubbles {
+  position: relative;
+  background: linear-gradient(to bottom right, #f0faff, #fff0f5);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.with-bubbles::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/bubbles-bg.png'); /* Or use animated SVG */
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.home-page .container {
+  position: relative;
+  z-index: 1;
+}

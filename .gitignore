@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# dotenv environment variables
+.env
+.env.local
+.env.*.local
+
+# Vite cache
+.vite/
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Firebase local emulators / state
+firebase-debug.log
+.firebaserc
+.firebase/
+
+# Optional: If using coverage tools like Jest
+coverage/
+
+# Lint cache
+.eslintcache
+
+# Mac system files
+Icon?
+
+# Optional lock files (depending on package manager preference)
+# Uncomment one of these:
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

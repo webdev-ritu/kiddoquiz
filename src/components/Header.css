@@ -1,0 +1,77 @@
+.custom-navbar {
+  z-index: 1000;
+  background-color: rgba(47, 48, 49, 0.85); /* Transparent Bootstrap primary */
+  -webkit-backdrop-filter: blur(10px); /* Safari */
+  backdrop-filter: blur(10px); /* Modern browsers */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar {
+  background: linear-gradient(to right, #232525, #57585a);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-link-custom {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ffd54f !important;
+  transform: scale(1.05);
+}
+
+.lang-toggle:hover,
+.header-btn:hover,
+.signup-btn:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+.brand-title {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #f06292, 4px 4px 0 #90caf9;
+  animation: bounceIn 1s ease-out;
+}
+
+/* Optional bounce animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.signup-btn {
+  background-color: #fff176;
+  border: none;
+  color: #333;
+}
+
+.signup-btn:hover {
+  background-color: #ffeb3b;
+  color: #000;
+}
+
+.login-btn {
+  background-color: #fff176;
+  border: none;
+  color: #333;
+}
+
+.login-btn:hover {
+  background-color: #ffeb3b;
+  color: #000;
+}
