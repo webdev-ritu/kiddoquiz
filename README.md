@@ -82,4 +82,5 @@ bash
 Copy code
 npm run build
 firebase deploy
-
+##❤️ Support
+If you enjoy this project, please ⭐ it on GitHub or share it with others!
